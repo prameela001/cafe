@@ -26,7 +26,7 @@ function setup(){
         menu[i].setAttribute('onclick', attributeValueOnClick);
     }
     placeOrder.setAttribute('onclick', 'goToCheckout()');
-    clearOrder.setAttribute('onclick', 'reset()');
+    clearOrder.setAttribute('onclick', 'resetOrder()');
 }
 
 function priceDisplay(imgSrc){
@@ -76,7 +76,7 @@ function displayTotal(total){
 function goToCheckout(){
     window.location.href = "./checkout.html";
 }
-function reset(){
+function resetOrder(){
     total = 0;
     pTotal.innerHTML = "";
     while(orderTag.firstElementChild){
